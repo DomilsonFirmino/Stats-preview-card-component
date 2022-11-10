@@ -45,6 +45,9 @@ a:not([class]) {
 /* Make images easier to work with */
 img,
 picture {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
   max-width: 100%;
   display: block;
 }
@@ -126,10 +129,29 @@ img{
   text-transform: uppercase;
 }
 
+
 :where(.info__content:not(:last-child)){
   padding-bottom: 1.5em;
 }
+@media (min-width: 50em){
+  :where(.info__content:not(:last-child)){
+    padding-bottom: 0;
+  }
 
+  .card__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+
+@media (min-width: 50em) {
+  .card__info{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 /*utility classes*/
 
 .container{
@@ -148,7 +170,16 @@ img{
 .direction{flex-direction: column;}
 
 @media (min-width: 50em){
-  
+  .card{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+    max-width: 66em;
+  }
+
+  .direction{
+    flex-direction: row;
+  }
 }
 
 .horizontal-center{ justify-content: center;}
@@ -165,7 +196,17 @@ img{
 
 .text-transparent{ color: var(--clr-neutral-slightly-transparent-white);}
 
-.text-center {text-align: center;}
+.text-center{text-align: center;}
+
+@media (min-width: 50em){
+  .text-center{ text-align: left;}  
+}
+
+.text-align {text-align: center;}
+
+@media (min-width: 50em){
+  .text-align{ text-align: left;}  
+}
 
 .padding-300{ padding-bottom: .8em;}
 
@@ -176,6 +217,13 @@ img{
 .padding-600{ padding-bottom: 2em;}
 
 .padding-block-400{ padding-block: 3em;}
+
+.fs-900{ font-size: var(--fs-900);}
+.fs-800{ font-size: var(--fs-800);}
+.fs-700{ font-size: var(--fs-700);}
+.fs-600{ font-size: var(--fs-600);}
+.fs-500{ font-size: var(--fs-500);}
+.fs-400{ font-size: var(--fs-400);}
 
 .grid{display: grid;}
 
