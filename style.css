@@ -129,6 +129,10 @@ img{
   text-transform: uppercase;
 }
 
+.card{
+  border-radius: 1em;
+  overflow: hidden;
+}
 
 :where(.info__content:not(:last-child)){
   padding-bottom: 1.5em;
@@ -142,6 +146,10 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+
+  header{
+    order: 1;
   }
 }
 
