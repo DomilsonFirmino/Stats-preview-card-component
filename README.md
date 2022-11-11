@@ -12,8 +12,8 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
   
 ### Links
 
-- Solution URL: [Stats preview card component](https://your-solution-url.com)
-- Live Site URL: [Stats preview card component](https://your-live-site-url.com)
+- Solution URL: [Stats preview card component](https://github.com/DomilsonFirmino/Stats-preview-card-component)
+- Live Site URL: [Stats preview card component](https://domilsonfirmino.github.io/Stats-preview-card-component/)
 
 #### Built with
 
